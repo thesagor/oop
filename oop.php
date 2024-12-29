@@ -1,14 +1,11 @@
 <?php
-class Car {
-    public $brand;
-    public $color;
+class varmy{
+    public $name="karim";
+    public function biva($name="biva"){
+        return "$name is my nepheew";
 
-    public function drive() {
-        echo "The car is driving.\n";
     }
 }
 
-$myCar = new Car();
-$myCar->brand = "Toyota";
-$myCar->color = "Red";
-$myCar->drive();
+$myvar= new varmy;
+var_dump($myvar);
