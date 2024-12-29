@@ -1,13 +1,14 @@
 <?php
-class myclass{
-    public $name="Sagor onllys";
-    public $age=25;
+class Car {
+    public $brand;
+    public $color;
 
-    public function myFuc($name="sagor", $age=25){
-        return "This is name of $name and this is his age $age";
-
+    public function drive() {
+        echo "The car is driving.\n";
     }
 }
 
-$myclass = new myclass;
-echo $myclass->myFuc("kamal ahmed", 65);
+$myCar = new Car();
+$myCar->brand = "Toyota";
+$myCar->color = "Red";
+$myCar->drive();
