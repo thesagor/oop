@@ -1,17 +1,23 @@
 <?php
-class varmy{
-    public $school= "gvt scool";
-    public $color;
-    public $brand;
-    public $name="karim";
-    public function car($brand, $color ){
-    return "$brand is the best color of car and the $color is top notch";
+class email{
+    public $promail;
 
+    function setmail($email){
+        if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
+            return;
+        }
+        $this->promail=$email;
+    }
+
+    public function getmail(){
+       return strtolower($this->promail);
     }
 }
+$mail= new email;
+$mail->setmail("shagor@Gmail.COom");
+echo $mail->getmail();
 
 
-$myvar= new varmy;
-$myvar->color="red";
-echo $myvar->color;
+
+
 
